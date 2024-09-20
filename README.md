@@ -1,21 +1,22 @@
 
-# 🎨 Handwritten Digit Recognition GUI with CNN 🖥️✍️
+# 🎨 Handwritten Digit Detection with CNN 🖥️✍️
 
-Welcome to the **Handwritten Digit Recognition App**! This project allows you to draw digits on a canvas using your mouse, and predicts the digit using a trained **Convolutional Neural Network (CNN)** model. The app provides a **confidence score** for the prediction and features buttons to clear the canvas or get a prediction.
+Welcome to the **Handwritten Digit Detection** project! This application allows users to draw digits on a canvas and predicts the digit using a highly accurate **Convolutional Neural Network (CNN)** model. The app also displays the model's confidence score and includes options to clear the canvas and make new predictions.
 
 ## 🌟 Features
-- **Draw Digits**: Use the canvas to draw any digit from 0 to 9.
+- **Draw Digits**: Use the canvas to draw digits from 0 to 9.
 - **Clear & Redraw**: Press the "Clear" button to erase the canvas and draw again.
 - **Predict**: Get the digit prediction and confidence score with the "Predict" button.
+- **CNN Model**: A trained CNN model achieves a **Test Accuracy** of 99.17%!
 - **GUI Built with Tkinter**: An easy-to-use graphical interface.
-- **CNN Model**: A pre-trained model predicts handwritten digits with high accuracy.
 
 ---
 
 ## 🛠️ Project Structure
 ```bash
-├── cnn_model.h5          # Pre-trained CNN model
-├── app.py # Main GUI application code
+├── cnn_model.py          # CNN model creation and training
+├── cnn_model.h5          # Trained CNN model
+├── digit_recognizer_gui.py # Main GUI application code
 ├── README.md             # This colorful readme!
 ```
 
@@ -38,7 +39,7 @@ pip install tensorflow keras pillow numpy
 
 ### 2️⃣ Running the App
 1. Clone or download this repository.
-2. Ensure the file `cnn_model.h5` (your trained CNN model) is in the project directory.
+2. Ensure the files `cnn_model.py` and `cnn_model.h5` (your trained CNN model) are in the project directory.
 3. Run the GUI by executing the Python script:
    ```bash
    python app.py
@@ -69,6 +70,13 @@ pip install tensorflow keras pillow numpy
 ---
 
 
+**Model Performance**:
+- **Test loss**: 0.0309
+- **Test accuracy**: 99.17%
+
+---
+
+
 ## 🤝 Contributing
 Feel free to fork this repository, raise issues, or submit pull requests for enhancements!
 
@@ -80,8 +88,12 @@ Feel free to fork this repository, raise issues, or submit pull requests for enh
 
 ---
 
+## 📝 License
+This project is open-source and available under the **MIT License**.
+
+---
 
 Happy coding, and enjoy building your digit recognition app! 🚀😊
 
---- 
+---
 
