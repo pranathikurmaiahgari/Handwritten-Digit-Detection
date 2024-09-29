@@ -16,7 +16,7 @@ Welcome to the **Handwritten Digit Detection** project! This application allows 
 ```bash
 ├── cnn_model.py          # CNN model creation and training
 ├── cnn_model.h5          # Trained CNN model
-├── digit_recognizer_gui.py # Main GUI application code
+├── app.py # Main GUI application code
 ├── README.md             # This colorful readme!
 ```
 
